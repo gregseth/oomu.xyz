@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+.apdisk
+.VolumeIcon.icns
+.TemporaryItems
+@eaDir
+
+# Lets Encypt challenge
+.well-known
+
+# Gallery
+gallery/img
+gallery/cache
+gallery/files.lst.txt
