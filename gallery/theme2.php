@@ -59,8 +59,7 @@ function computeSize() {
     
     var tag = document.querySelector('#sizeTag');
     tag.textContent = sizeStr;
-    tag.style.left = (img.getBoundingClientRect().right -tag.clientWidth -36) +'px';
-    tag.style.top = (120) +'px';
+    tag.style.left = (img.getBoundingClientRect().right - tag.clientWidth) +'px';
     console.log("pos>>> ["+tag.style.left+","+tag.style.top+"]");
 }
 
