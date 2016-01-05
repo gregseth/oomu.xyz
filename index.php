@@ -106,8 +106,9 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
   Links
 
     * Pictures: <a href="gallery/t1">theme 1</a> - <a href="gallery/t2">theme 2</a>
-    * <a href="https://giediprime.oomu.xyz:5001">Web access</a>
     * Memos: <a href="https://memo.gregseth.net">dev</a> - <a href="https://memo.gregseth.net/vi.shortcuts">vi</a> - <a href="https://memo.gregseth.net/git">git</a>
+    * <a href="https://giediprime.oomu.xyz:5001">Web access</a>
+    * <a href="https://gregseth.net/gmscripts">GreaseMonkey scripts</a>
 
 
 ==========================================================================================
