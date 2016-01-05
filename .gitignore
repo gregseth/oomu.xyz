@@ -4,6 +4,8 @@
 .VolumeIcon.icns
 .TemporaryItems
 @eaDir
+*.swp
+~*
 
 # Lets Encypt challenge
 .well-known
