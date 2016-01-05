@@ -26,29 +26,45 @@ body {
     z-index: -1;
 }
 #big {
-    width: auto;
-    height: auto;
-    max-width: 80%;
-    max-height: 60%;
-    margin: 120px auto;
-    border: #FFF solid 7px;
+    width: 90%;
+    height: auto;   
+    max-width: auto;
+    max-height: auto;
+    margin: 30px auto;
+    border: #FFF solid 14px;
     box-shadow: 0px 0px 8em black;
 }
+@media screen and (min-width: 1200px) {
+    #big {
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        max-height: 60%;
+        margin: 120px auto;
+        border: #FFF solid 7px;
+    }
+}
 #sizeTag {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    font-family: bmp, sans-serif;
-    -moz-font-smoothing: never;
-    -webkit-font-smoothing: none;
-    font-smoothing: none;
-    font-smooth: never;
-    font-size: 8px;
-    color: #333;
-    /*background: #FF0;*/
-    padding: 0 7px;
-    height: 7px;
-    line-height: 7px;
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    #sizeTag {
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        font-family: bmp, sans-serif;
+        -moz-font-smoothing: never;
+        -webkit-font-smoothing: none;
+        font-smoothing: none;
+        font-smooth: never;
+        font-size: 8px;
+        color: #333;
+        /*background: #FF0;*/
+        padding: 0 7px;
+        height: 7px;
+        line-height: 7px;
+    }
 }
 nav {
     display: table;
@@ -58,9 +74,22 @@ nav img {
     margin: 0;
     border: #000 solid 3px;
     box-shadow: 0px 0px 1em #FFF;
+    width: 75%;
+    height: auto;
 }
 nav .link {
-    width: 2em;
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    nav img {
+        margin: 0;
+        border: #000 solid 3px;
+        box-shadow: 0px 0px 1em #FFF;
+    }
+    nav .link {
+        display: table-cell;
+        width: 2em;
+    }
 }
 nav a {
     display: table-cell;
@@ -89,3 +118,5 @@ nav a:hover {
 nav a:hover {
     text-shadow: 0px 0px .15em #000;
 }
+
+
