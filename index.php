@@ -48,7 +48,7 @@ $sun = $SC->getSunTimes();
 $suny = $SCyesterday->getSunTimes();
 $moon = $SC->getMoonTimes();
 
-$phases = ". ------------ D ------------ O ------------ C ------------ .";
+$phases = ". -------------- D -------------- O -------------- C -------------- .";
 // $phases = "🌑🌓🌕🌗🌑";
 $ph = round($SC->getMoonIllumination()['phase'], 2);
 $tick = str_pad('^', $ph*strlen($phases)+1, ' ', STR_PAD_LEFT);
@@ -109,6 +109,7 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
     * Memos: <a href="https://memo.gregseth.net">dev</a> - <a href="https://memo.gregseth.net/vi.shortcuts">vi</a> - <a href="https://memo.gregseth.net/git">git</a>
     * <a href="https://giediprime.oomu.xyz:5001">Web access</a>
     * <a href="https://gregseth.net/gmscripts">GreaseMonkey scripts</a>
+    * <a href="https://gregseth.net/signature.html">Signatures</a>
 
 
 ==========================================================================================
@@ -125,7 +126,7 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
     * <?=fmtEphemLine($moon, 'moonrise')?>
     * <?=fmtEphemLine($moon, 'moonset')?>
 
-    * Moon phase  <?=$phases?> 
+    * Moon phase <?=$phases?> 
                   <?=$tick?> 
 <? if ($ph == 0): ?>
                                     _..._
