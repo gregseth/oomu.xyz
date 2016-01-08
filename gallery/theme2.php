@@ -12,6 +12,9 @@ if (empty($_SESSION['lastread']) || $_SESSION['lastread'] < filemtime($list) || 
 
 $images	= $_SESSION['images'];
 $id = empty($_GET['id']) ? 0 : $_GET['id'];
+if ($id == 'rand') {
+    $id = rand(0, count($images)-1);
+}
 $img = dirname($images[$id]).'/'.basename($images[$id]);
 $realimgsize = getimagesize($img);
 

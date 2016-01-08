@@ -9,4 +9,4 @@ RewriteRule ^gallery/t1/?$ /gallery/theme1.php [L]
 RewriteRule ^gallery/t1/([0-9]+)/([0-9]+)$ /gallery/theme1.php?offset=$1&limit=$2 [L,QSA]
 
 RewriteRule ^gallery/t2/?$ /gallery/theme2.php [L]
-RewriteRule ^gallery/t2/([0-9]+)$ /gallery/theme2.php?id=$1 [L,QSA]
+RewriteRule ^gallery/t2/(rand|[0-9]+)$ /gallery/theme2.php?id=$1 [L,QSA]
