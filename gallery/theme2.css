@@ -9,7 +9,7 @@ body {
 }
 @font-face {
     font-family: bmp;
-    src: url('Webycaps.ttf') format('truetype');
+    src: url('Webycaps2x.ttf') format('truetype');
     /*src: url('BitmapSmallFont2.ttf') format('truetype');*/
 }
 #filter {
@@ -31,42 +31,12 @@ body {
     max-width: auto;
     max-height: auto;
     margin: 30px auto;
-    border: #FFF solid 14px;
+    border: #FFF solid 7px;
     box-shadow: 0px 0px 8em black;
-}
-@media screen and (min-width: 1200px) {
-    #big {
-        width: auto;
-        height: auto;
-        max-width: 80%;
-        max-height: 80%;
-        margin: 5em auto;
-        border: #FFF solid 7px;
-    }
 }
 #sizeTag {
     display: none;
-}
-@media screen and (min-width: 1200px) {
-    #sizeTag {
-        display: block;
-        position: absolute;
-        top: 5em;
-        left: 0;
-        font-family: bmp, sans-serif;
-        -moz-font-smoothing: never;
-        -webkit-font-smoothing: none;
-        font-smoothing: none;
-        font-smooth: never;
-        font-size: 16px;
-        color: #333;
-        /*background: #FF0;*/
-        padding: 0 7px;
-        height: 7px;
-        line-height: 3px;
-    }
-}
-nav {
+}nav {
     display: table;
     margin: auto auto 5em;
 }
@@ -79,17 +49,6 @@ nav img {
 }
 nav .link {
     display: none;
-}
-@media screen and (min-width: 1200px) {
-    nav img {
-        margin: 0;
-        border: #000 solid 3px;
-        box-shadow: 0px 0px 1em #FFF;
-    }
-    nav .link {
-        display: table-cell;
-        width: 2em;
-    }
 }
 nav a {
     display: table-cell;
@@ -119,4 +78,42 @@ nav a:hover {
     text-shadow: 0px 0px .15em #000;
 }
 
+
+@media screen and (min-width: 1200px) {
+    #big {
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 5em auto;
+        border: #FFF solid 7px;
+    }
+    #sizeTag {
+        display: block;
+        position: absolute;
+        top: 10em;
+        left: 0;
+        font-family: bmp, sans-serif;
+        -moz-font-smoothing: never;
+        -webkit-font-smoothing: none;
+        font-smoothing: none;
+        font-smooth: never;
+        font-size: 8px;
+        color: #333;
+        /*background: #FF0;*/
+        padding: 0 7px;
+        height: 7px;
+        line-height: 7px;
+    }
+    nav img {
+        margin: 0;
+        border: #000 solid 3px;
+        box-shadow: 0px 0px 1em #FFF;
+    }
+    nav .link {
+        display: table-cell;
+        width: 2em;
+    }
+
+}
 
