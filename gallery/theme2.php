@@ -12,7 +12,7 @@ if (empty($_SESSION['lastread']) || $_SESSION['lastread'] < filemtime($list) || 
 
 $images	= $_SESSION['images'];
 $id = empty($_GET['id']) ? 0 : $_GET['id'];
-if ($id == 'rand') {
+if ($id === 'rand') {
     $id = rand(0, count($images)-1);
 }
 $img = dirname($images[$id]).'/'.basename($images[$id]);
@@ -71,7 +71,7 @@ function computeSize() {
 
 <body onresize="computeSize()">
     <div id="filter" ></div>
-    <!--<h1><?=basename($images[$id])?></h1>-->
+    <!--<h1><?=basename($images[$id])?>//<?=$id?>//<?=$_GET['id']?></h1>-->
     <img id="big" src="<?=$img?>" onload="computeSize()" />
     <div id="sizeTag"></div>
     <nav>
