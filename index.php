@@ -123,8 +123,8 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
     * <?=fmtEphemLine($sun, 'dusk', $suny)?>
     * <?=fmtDaytimeLine()?>
     
-    * <?=fmtEphemLine($moon, 'moonrise')?>
-    * <?=fmtEphemLine($moon, 'moonset')?>
+    * <?=($moon['moonrise'] != null) ? fmtEphemLine($moon, 'moonrise') : '' ?>
+    * <?=($moon['moonset'] != null) ? fmtEphemLine($moon, 'moonset') : '' ?>
 
     * Moon phase <?=$phases?> 
                   <?=$tick?> 
