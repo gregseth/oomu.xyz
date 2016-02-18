@@ -103,14 +103,24 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
 ==========================================================================================
 
 
-  Links
+    * <a href="https://giediprime.oomu.xyz:5001">Giediprime</a> | <a href="https://box.oomu.xyz:12345">Box</a>
 
-    * Pictures: <a href="gallery/t1">theme 1</a> - <a href="gallery/t2">theme 2</a>
+    * Pictures: <a href="https://oomu.xyz/gallery/t1">theme 1</a> - <a href="https://oomu.xyz/gallery/t2">theme 2</a>
     * Memos: <a href="https://memo.gregseth.net">dev</a> - <a href="https://memo.gregseth.net/vi.shortcuts">vi</a> - <a href="https://memo.gregseth.net/git">git</a>
-    * <a href="https://giediprime.oomu.xyz:5001">Web access</a>
     * <a href="https://gregseth.net/gmscripts">GreaseMonkey scripts</a>
     * <a href="https://gregseth.net/signature.html">Signatures</a>
 
+  Tools
+
+    * <a href="https://regex101.com">RegEx 101</a>
+    * <a href="http://www.shellcheck.net/">Shell Check</a>
+    * <a href="http://www.ostera.io/tldr.jsx">TL;DR manpages</a>
+
+  Networking
+
+    * <a href="https://tls.imirhil.fr">Imirhil</a>
+    * <a href="https://www.ssllabs.com/ssltest/index.html">SSL Labs</a>
+    * <a href="http://www.ipv6-test.com/">IPv6</a>
 
 ==========================================================================================
 
