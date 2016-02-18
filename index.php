@@ -13,12 +13,18 @@ body {
     font-size: 11px;
 }
 pre {
-    width: 121ex;
-    margin: 10em auto;
+    width: 640px;
+    margin: 12em auto;
     text-align: left;
+}
+.weather {
+    width: 880px;
 }
 a {
     color: #FC6;
+}
+a:not([href^='https']) {
+    color: #F93;
 }
 a:hover {
     text-decoration: none;
@@ -196,6 +202,9 @@ $$$,     $$$$$$,     $$$$$$$$$$$"$$$ $$      $$$            Y$$$P         c$$"  
                                    `-.::''
 <? endif; ?>
 
+</pre>
+<pre class="weather">
+  <?=shell_exec("curl -4 'http://wttr.in/paris'|sed -r 's/\x1B\[([0-9]{1,2}(;[0-9]{1,3})*)?[m|K]//g'")?>
 </pre>
 
 </body>
