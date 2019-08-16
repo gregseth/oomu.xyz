@@ -4,9 +4,9 @@
  *   img:   The url of the picture
  *   size:  The longest side of the picture
  */
- 
+
 /**** DEBUG only *************
-ini_set('display_errors',1); 
+ini_set('display_errors',1);
 error_reporting(E_ALL);
 /*****************************/
 
@@ -21,7 +21,7 @@ $imgecho = 'image'.$ttype;
 $cached_thumb = 'cache/'.md5($img).'.'.$type;
 if (!file_exists($cached_thumb)) {
 //dbg:// echo "<pre>[$img]\n[".stripslashes($img)."]\n[".(file_exists(stripslashes($img))?"yes":"no")."]</pre>";exit;
-    
+
     $src = null;
     $dest = null;
     if (file_exists(stripslashes($img)) && filesize(stripslashes($img))<8*1024*1024) {
@@ -30,7 +30,7 @@ if (!file_exists($cached_thumb)) {
     if ($src) {
         $sx = imagesx($src);
         $sy = imagesy($src);
-        
+
         if (max($sx, $sy) <= $size) {
             $dx = $sx;
             $dy = $sy;
@@ -43,19 +43,19 @@ if (!file_exists($cached_thumb)) {
     }
     if ($dest) {
         imagecopyresampled($dest, $src, 0, 0, 0, 0, $dx, $dy, $sx, $sy);
-        
+
         if ($ttype == 'jpeg') {
             $imgecho($dest, $cached_thumb, 100);
         } else {
             $imgecho($dest, $cached_thumb);
         }
-        
+
         imagedestroy($dest);
     } else {
         $type = 'jpg';
         $cached_thumb = '404_thumb.jpg';
-    } 
-    
+    }
+
 }
 // else
 {
